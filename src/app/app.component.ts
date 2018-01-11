@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ProductService } from './home/products/product.service';
 
 @Component({
   selector: 'pm-root',
@@ -6,7 +7,8 @@ import { Component } from '@angular/core';
                 <h1>{{pageTitle}}</h1>
                 <div>Some Component will be here maybe </div>
                 <pm-products></pm-products>
-            </div>`
+            </div>`,
+      providers: [ProductService]
 })
 
 export class AppComponent {
